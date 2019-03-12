@@ -34,7 +34,7 @@ $(function() {
     // Panel version. SEE: https://semver.org/
     // Example: MAJOR.MINOR.PATCH
     helpers.PANEL_VERSION = "1.0.0";
-
+$("#page-content").load("./pages/dashboard/dashboard.html");
     /*
      * @function adds commas to thousands.
      *
@@ -1042,7 +1042,7 @@ $(function() {
 
         return parsedDate;
     };
-
+    
     // Export.
     window.helpers = helpers;
     window.helpers.temp = {};
