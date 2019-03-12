@@ -136,12 +136,9 @@
 
                         <!-- Main dashboard tab -->
                         <li class="treeview active">
-                            <a href="#dashboard.html" data-folder="./pages/dashboard/dashboard">
+                            <a href="#dashboard.html" data-folder="dashboard">
                                 <i class="fa fa-dashboard"></i> <span> Dashboard</span>
-                                <div id="dashboardPanel"></div>
-<script type="text/javascript">
-                $("#dashboardPanel").load("./pages/dashboard/dashboard.html");
-            </script>
+                                
                             </a>
                         </li>
 
@@ -386,9 +383,13 @@
             </aside>
 
             <!-- Content Wrapper. Contains page content -->
-<!--             <aside class="content-wrapper">
+            <aside class="content-wrapper">
                 <div id="page-content"></div>
-            </aside> -->
+                
+<script type="text/javascript">
+                $("#page-content").load("./pages/dashboard/dashboard.html");
+            </script>
+            </aside>
         </div>
 
         <!-- Control Sidebar -->
