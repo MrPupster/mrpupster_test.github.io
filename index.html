@@ -138,6 +138,10 @@
                         <li class="treeview active">
                             <a href="#dashboard.html" data-folder="dashboard">
                                 <i class="fa fa-dashboard"></i> <span> Dashboard</span>
+                                <div id="dashboardPanel"></div>
+<script>
+                $("#dashboardPanel").load("./pages/dashboard/dashboard.html");
+            </script>
                             </a>
                         </li>
 
@@ -382,9 +386,9 @@
             </aside>
 
             <!-- Content Wrapper. Contains page content -->
-            <aside class="content-wrapper">
+<!--             <aside class="content-wrapper">
                 <div id="page-content"></div>
-            </aside>
+            </aside> -->
         </div>
 
         <!-- Control Sidebar -->
@@ -492,7 +496,7 @@
         <!-- Sidebar control. This is required to fill it the side of the screen. -->
         <div class="control-sidebar-bg"></div>
     </div>
-
+    
     <!-- jQuery 3 -->
     <script src="./vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap 3.3.7 -->
@@ -516,6 +520,7 @@
     <script src="./js/utils/panelConfig.js"></script>
     <!-- Helpers -->
     <script src="./js/utils/helpers.js"></script>
+    <script src="./js/pages/global.js"></script>
     <!-- Ajax page loader -->
 <!--     <script src="./js/utils/ajaxLoader.js"></script> -->
     <!-- Reconnecting socket. -->
